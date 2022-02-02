@@ -1,0 +1,178 @@
+:root {
+    --red: #E50914;
+    --green: #1be509;
+    --black: #141414;
+    --white: #eeeeee;
+}/*netflix's colors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*to exclude borders of all document*/
+
+/*DarkMode*/
+    /*button*/
+.light-mode .button {
+	border-radius: 20px;
+	font-size: 12px;
+    font-weight: bold;
+    font-family: arial,sans-serif;
+	height: 30px;
+	width: 150px;
+	border: none;
+	background-color: #4e545c;
+	color: var(--white);
+	transition: all 0.5s linear;
+}
+
+.light-mode .button:hover{
+    background-color: #4e545c;
+    color: var(--white);
+}
+
+.dark-mode .button {
+    border-radius: 20px;
+	font-size: 12px;
+    font-weight: bold;
+    font-family: arial,sans-serif;
+	height: 30px;
+	width: 150px;
+	border: none;
+    background-color: #e5e8e8;
+	color: #4e545c;
+    transition: all 0.5s linear;
+}
+
+.dark-mode .button:hover {
+	background-color: #e5e8e8;
+	color: #4e545c;
+}
+
+/* base element*/
+.white-mode {
+  background: var(--white);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.dark-mode {
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+  }
+
+header .container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--green);
+    font-family: 'Arial Black', Times;
+    font-size: 60px;
+}
+
+.dark-mode header .logo{
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 60px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--black);
+    margin-right: 10px;
+}
+
+.dark-mode header nav a {
+    text-decoration: none;
+    color: #AAAAAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--black);
+}
+
+.dark-mode header nav a:hover{
+    color: #AAAAAA;
+}
+
+/*principal movie*/
+.principal-dog{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Assets/img/Beagle.jpg');
+
+    height: 700px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal-dog .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 25%;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.principal-dog .title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: var(--white);
+}
+
+.principal-dog .info{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 18px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.button i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.principal-dog .container{
+    width: 70%;
+}
+
+.dogs-carousel {
+    margin-top:5px;
+}
+
+.dog-box {
+    height: 100%;
+    width: 100%; 
+    display: block;
+}
+
+footer .light-mode{
+    background:var(--white);
+    color: #000401;
+}
