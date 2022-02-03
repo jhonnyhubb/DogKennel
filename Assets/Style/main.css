@@ -104,7 +104,8 @@ header nav a:hover{
 /*principal movie*/
 .principal-dog{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Assets/img/Beagle.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    background-image: url("../img/Beagle.jpg");
 
     height: 700px;
     background-size:cover;
